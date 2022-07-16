@@ -7,9 +7,40 @@
     <title>Conditional Statements & Loops</title>
 </head>
 <body>
-    // Write a JavaScript program that accepts two integers and displays the larger of the two.
+<script> 
+ // Write a JavaScript program that accepts two integers and displays the larger of the two.
+  
+    var num1, num2;
+    num1 = window.prompt("Please choose your first number", "0");
+    num2 = window.prompt("Please choose your second number", "0");
+
+    if (parseInt(num1, 10) > parseInt(num2, 10)) {
+        console.log("The larger of " + num1 + " and " + num2 + " is " + num1 + ".");
+    }
+    else
+        if (parseInt(num2, 10) > parseInt(num1, 10)) {
+            console.log("The larger of " + num1 + " and " + num2 + " is " + num2 + ".");
+        }
+        else {
+            console.log("The values " + num1 + " and " + num2 + " are equal.");
+        }
+
+
+// Write a JavaScript program that checks whether an integer is an even or an odd number.
+
+    const number = prompt("Enter a number: ");
+
+        const result = (number % 2 == 0) ? "even" : "odd";
+
+        // display the result
+        console.log(`The number is ${result}.`);
+
+
+
+</script> 
+
     
-    //Write a JavaScript program that checks whether an integer is an even or an odd number.
+    
 </body>
 </html>
 
